@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Jorge | Portfólio</title>
+  <meta name="description" content="João Jorge — Trainee de TI na Sodecia MG. Trajetória, experiências, projetos e contatos em uma página só.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d12; --muted:#0f1218; --card:#11151c; --soft:#171b23; --text:#e6e9ef; --sub:#a6adbb; --brand:#6ee7b7; --brand-2:#60a5fa; --line:#202631;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:linear-gradient(180deg,var(--bg),#0d1016 60%,#0b0d12);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;height:auto;border-radius:14px}
+    .container{max-width:1080px;margin:0 auto;padding:24px}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:var(--soft);border:1px solid var(--line);padding:8px 12px;border-radius:999px;font-size:12px;color:var(--sub)}
+    .pill{display:inline-block;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,0.02);color:var(--sub);font-size:12px}
+    .btn{display:inline-flex;gap:10px;align-items:center;padding:14px 18px;border-radius:14px;border:1px solid var(--line);background:var(--soft);color:var(--text);font-weight:600}
+    .btn:hover{transform:translateY(-1px);transition:all .2s ease;background:#1d2330}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b0d12;border:0}
+    .shadow{box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    header{position:sticky;top:0;background:rgba(11,13,18,.6);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:20}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
+    nav .links{display:flex;gap:18px}
+    nav a{color:var(--sub);font-weight:600}
+    nav a:hover{color:var(--text)}
+    .hero{padding:56px 0}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .tag{font-size:13px;color:var(--sub)}
+    h1{font-size:44px;line-height:1.1;margin:10px 0 12px}
+    .lead{font-size:18px;color:var(--sub)}
+    .cluster{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+    .cards{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 4;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .card h3{margin:6px 0 8px;font-size:18px}
+    .card p{color:var(--sub);font-size:14px}
+    .section{padding:40px 0}
+    .section h2{font-size:28px;margin:0 0 18px}
+    .timeline{position:relative;border-left:2px solid var(--line);padding-left:18px;margin-left:8px}
+    .tl-item{margin:0 0 18px 0}
+    .tl-item::before{content:"";position:absolute;left:-7px;margin-top:6px;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand-2));}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .project{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .project .body{padding:16px}
+    footer{padding:32px 0;border-top:1px solid var(--line);color:var(--sub)}
+    .avatar{width:120px;height:120px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(135deg,#1b2331,#0f141d)}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;background:#0d1117;border:1px solid #30363d;border-radius:6px;padding:2px 6px;font-size:12px;color:#c9d1d9}
+    .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media (max-width: 920px){
+      .hero-grid{grid-template-columns:1fr}
+      .card{grid-column:span 12}
+      .grid-3{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "João Jorge Moreira Barros",
+    "jobTitle": "Trainee de TI",
+    "worksFor": {"@type":"Organization","name":"Sodecia Automotive MG"},
+    "url": "https://",
+    "sameAs": ["https://www.linkedin.com/in/","https://github.com/"],
+    "knowsAbout": ["Node.js","Admin de Sistemas","Active Directory","Dashboards de KPI","Suporte a Sistemas (Prodwin)","SQL"],
+    "email": "mailto:joaojorgemoreirabarros@gmail.com"
+  }
+  </script>
+</head>
+<body>
+  <a class="sr" href="#conteudo">Pular para conteúdo</a>
+  <header>
+    <nav class="container">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="width:12px;height:12px;border-radius:3px;background:linear-gradient(135deg,var(--brand),var(--brand-2));"></div>
+        <strong>JJ • Portfólio</strong>
+      </div>
+      <div class="links">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <span class="badge">Disponível para oportunidades</span>
+          <h1>João Jorge<br> <span style="background:linear-gradient(135deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Trainee de TI</span> & Desenvolvedor</h1>
+          <p class="lead">Atuo na Sodecia Automotive MG (Sete Lagoas/MG) desde 2024, apoiando a transformação digital da fábrica: suporte a sistemas (Prodwin), AD, automações e dashboards em tempo real (Node.js). Aqui você encontra minha trajetória, projetos e formas de contato.</p>
+          <div class="cluster">
+            <a class="btn primary shadow" href="#contato">Fale comigo</a>
+            <a class="btn" href="#projetos">Ver projetos</a>
+            <a class="btn" href="./curriculo-joao-jorge.pdf" download>Baixar CV</a>
+          </div>
+          <div class="cluster" style="margin-top:16px">
+            <span class="pill">Node.js</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">React</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Active Directory</span>
+            <span class="pill">Prodwin</span>
+          </div>
+        </div>
+        <div style="display:flex;justify-content:center">
+          <img class="avatar" alt="Foto de perfil de João Jorge" src="https://images.unsplash.com/photo-1542060748-10c28b62716a?q=80&w=800&auto=format&fit=crop"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="section" aria-labelledby="destaques">
+      <h2 id="destaques">Destaques</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="tag">Transformação Digital</div>
+          <h3>Dashboards em tempo real</h3>
+          <p>Site interno com KPIs do chão de fábrica usando Node.js + template Gentella. Indicadores por célula e tempo de produção.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Infra & Sistemas</div>
+          <h3>Suporte Prodwin & AD</h3>
+          <p>Administração básica de Active Directory, criação de usuários e suporte ao ERP Prodwin para áreas da fábrica.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Cultura Kaizen</div>
+          <h3>Projetos de melhoria</h3>
+          <p>Kaizens mensais (ex.: Migração do servidor MIX, roteadores, sinalização digital com Raspberry Pi, etc.).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE / TIMELINE -->
+    <section id="sobre" class="section" aria-labelledby="sobre-titulo">
+      <h2 id="sobre-titulo">Sobre mim</h2>
+      <div class="grid-2">
+        <div>
+          <p>Sou o João, apaixonado por tecnologia e por resolver problemas reais com código. No dia a dia, conecto pessoas, dados e processos para entregar soluções simples e úteis — do suporte técnico ao desenvolvimento web.</p>
+          <p>Além da TI, gosto de xadrez, games (LoL/TFT) e de construir projetos pessoais como apps e sites. Estou sempre aprendendo e compartilhando.</p>
+          <div class="cluster">
+            <a class="btn" href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="#contato">E-mail</a>
+          </div>
+        </div>
+        <div>
+          <h3 style="margin-top:0">Linha do tempo</h3>
+          <div class="timeline">
+            <div class="tl-item">
+              <strong>2024–Atual • Sodecia Automotive MG</strong>
+              <div class="tag">Trainee de TI</div>
+              <p class="lead">Suporte a sistemas, AD, automações e dashboards para operações.</p>
+            </div>
+            <div class="tl-item">
+              <strong>2018–2025 • Graduação</strong>
+              <div class="tag">Ciência da Computação</div>
+              <p class="lead">Início na FUMEC (BH) e continuidade na UNA Sete Lagoas.</p>
+            </div>
+            <div class="tl-item">
+              <strong>Antes • Projetos e estágios</strong>
+              <div class="tag">Desenv. e Suporte</div>
+              <p class="lead">Vivência com Java, JavaScript, HTML/CSS, Python e metodologias ágeis (Kanban).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia" class="section" aria-labelledby="exp-titulo">
+      <h2 id="exp-titulo">Experiência</h2>
+      <div class="grid-2">
+        <div class="project">
+          <div class="body">
+            <h3 style="margin:0">Trainee de TI • Sodecia Automotive MG</h3>
+            <p class="tag">2024 — atual</p>
+            <ul>
+              <li>Suporte a Prodwin e sistemas internos; atendimento a áreas da fábrica.</li>
+              <li>Administração básica de Active Directory (criação e gestão de usuários).</li>
+              <li>Desenvolvimento de dashboards (Node.js + Gentella) para KPIs e tempo de produção.</li>
+              <li>Projetos Kaizen: Migração de servidor MIX, melhoria de rede e sinalização digital.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project">
+          <div class="body">
+            <h3 style="margin:0">Desenvolvimento & Suporte • Projetos diversos</h3>
+            <p class="tag">2019 — 2024</p>
+            <ul>
+              <li>Desenvolvimento web (HTML, CSS, JS, Java, Python) e integrações simples.</li>
+              <li>Metodologias ágeis (Kanban) e trabalho colaborativo com QA/testes.</li>
+              <li>Criação de automações e pequenos serviços para melhorar fluxos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section" aria-labelledby="projetos-titulo">
+      <h2 id="projetos-titulo">Projetos em destaque</h2>
+      <div class="grid-3">
+        <article class="project">
+          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop" alt="Dashboard com gráficos"/>
+          <div class="body">
+            <h3>KPIs da Fábrica em Tempo Real</h3>
+            <p class="lead">Dashboard interno com KPIs por célula e tempo de produção em Node.js.</p>
+            <div class="cluster">
+              <span class="pill">Node.js</span>
+              <span class="pill">Gentella</span>
+              <span class="pill">Chart.js</span>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Código em editor"/>
+          <div class="body">
+            <h3>Ajudaí (app de serviços)</h3>
+            <p class="lead">App para conectar pessoas e prestadores locais (React Native + TS).</p>
+            <div class="cluster">
+              <span class="pill">React Native</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Expo</span>
+            </div>
+          </div>
+        </article>
+        <article class="project">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1600&auto=format&fit=crop" alt="Servidor e rede"/>
+          <div class="body">
+            <h3>Migração Servidor MIX</h3>
+            <p class="lead">Projeto Kaizen: mais desempenho, memória e armazenamento para o HR.</p>
+            <div class="cluster">
+              <span class="pill">Infra</span>
+              <span class="pill">Windows Server</span>
+              <span class="pill">Kaizen</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section" aria-labelledby="skills-titulo">
+      <h2 id="skills-titulo">Habilidades</h2>
+      <div class="cluster">
+        <span class="pill">JavaScript</span>
+        <span class="pill">TypeScript</span>
+        <span class="pill">Node.js</span>
+        <span class="pill">React</span>
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">Python</span>
+        <span class="pill">Java</span>
+        <span class="pill">SQL</span>
+        <span class="pill">Active Directory</span>
+        <span class="pill">Kanban</span>
+        <span class="pill">Git/GitHub</span>
+        <span class="pill">Dashboards</span>
+      </div>
+    </section>
+
+    <!-- EDUCAÇÃO -->
+    <section class="section" aria-labelledby="edu-titulo">
+      <h2 id="edu-titulo">Educação</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Ciência da Computação</h3>
+          <p>FUMEC (início) • UNA Sete Lagoas (continuidade)</p>
+          <p class="tag">2018 — 2025</p>
+        </div>
+        <div class="card">
+          <h3>Formações & Cursos</h3>
+          <p>Trilhas em desenvolvimento web, redes e automações. Aprendizado contínuo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section" aria-labelledby="contato-titulo">
+      <h2 id="contato-titulo">Contato</h2>
+      <p>Curtiu o que viu? Vamos conversar 👋</p>
+      <div class="cluster">
+        <a class="btn primary" href="mailto:joaojorgemoreirabarros@gmail.com">E-mail</a>
+        <a class="btn" href="https://wa.me/5531992649071" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <small>© <span id="year"></span> João Jorge. Todos os direitos reservados.</small>
+        <small>Feito com ❤ e café — <span class="kbd">HTML + CSS</span></small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear()
+  </script>
+</body>
+</html>
